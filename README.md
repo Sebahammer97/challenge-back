@@ -28,3 +28,17 @@ Se deberá entregar tanto el código fuente como el proyecto o script de base de
 > Tiempo de entrega: 1 semana.
 
 > Colocar debajo de este espacio lo necesario para que la aplicacion compile y se ejecute correctamente.
+
+Pre-requisitos:
+Tener MariaDb o MySQL instalado en la máquina.
+
+Pasos de instalación:
+1. Clonar el repositorio localmente.
+2. Instalar o verificar que se tenga instalado las siguientes librerías en el nuget package:
+  ![imagen](https://user-images.githubusercontent.com/55815143/155888328-d79d744d-2c67-4cc6-b293-4875819022f7.png)
+3. Cambiar el connection string ubicado en el archivo appsettings.json por lo que corresponda con su configuración local.
+4. Ir a la carpeta Utils, abrir el archivo DB-University.sql y ejecutar el script en una base de datos MariaDb o MySQL.
+5. Al ejecutar el proyecto, automáticamente se abrirá una página en el navegador indicando los endpoints disponibles (Swagger).
+  a. Ejemplo:
+  ![imagen](https://user-images.githubusercontent.com/55815143/155888718-61eceaff-361b-416e-b327-e4d8f55b4676.png)
+  b. Opcionalmente en la carpeta Utils se encuentra el archivo UniversityAPI.postman_collection.json en el que se lo puede importar al programa Postman para realizar las llamadas a la API.
